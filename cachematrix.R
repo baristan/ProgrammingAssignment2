@@ -7,12 +7,12 @@
 makeCacheMatrix <- function(x = matrix()) {
         m <<- NULL
 	set <- function(x) {
-                 v <<-x
+                 v <<-x		##we use this operator so we can access v outside the "parent" function
 		 m <<- NULL
         }	
 	setinverse <- function(inverse) m <<- inverse
         getinverse <- function() m
-	get <- function() v
+	get <- function() v	#we can see the matrix that on variable v
 	list(set = set, get = get,setinverse = setinverse,getinverse = getinverse)
 	
 }
