@@ -31,5 +31,5 @@ cacheSolve <- function(x, ...) {
          m <- solve(data, ...)	##it calculates the inverse of the data and sets the value of the inverse 
          x$setinverse(m)	##in the cache via the setinverse function
          m
-         
+
 }
